@@ -1,0 +1,31 @@
+
+<div id="all-burgers">
+    {{> burger/all}}
+</div>
+<h1>Build A Burger</h1>
+
+<form method="POST" action="/" class="button-size">
+  <textarea type="text" name="burger"></textarea>
+  <button type="submit">Save Burger!</button>
+</form>
+ 
+<h2>Update a Movie</h2>
+<form action="/?_method=PUT" method="POST" class="button-size">
+  <input type="text" name="id" placeholder="id">
+  <textarea type="text" name="burger" placeholder="Do you want to eat this burger?"></textarea>
+  <button type="submit">Devour</button>
+</form>
+
+<!-- <ul>
+  {{#each burgers}}
+    <li>
+      <p>
+        {{this.id}}. {{this.burger}}. {{this.devour}}. {{this.date}}
+        <form method="POST" action="/burgers" class="button-size">
+          <textarea type="text" name="burger"></textarea>
+          <button type="submit">Cook Burger</button>
+        </form>
+      </p>
+    </li>
+  {{/each}}
+</ul> -->

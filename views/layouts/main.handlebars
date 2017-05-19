@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burger Ye Wrote!</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                {{{ body }}}
+            </div>
+        </div>
+            <div class="col-lg-6">
+                {{{ body.res }}}
+            </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- App -->
+    <script src="/public/assets/js/app.js"></script>
+
+</body>
+</html>
+
+<!-- //devoured boolean + button logic - may need in a separate file 
+//pulled from details.handle...14.6/6
+<label>{{burger_name}}</label>
+<form class="update-form" action="/burgers/{{id}}">
+  {{#if sleepy}}
+  <input type="hidden" name="sleepy" value="0">
+  <button type="submit">
+    WAKE UP!
+  </button>
+  {{else}}
+  <input type="hidden" name="sleepy" value="1">
+  <button type="submit">
+    SLEEP TIME!
+  </button>
+  {{/if}}
+</form>
+
+
+//disabled field 
+<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled> -->
